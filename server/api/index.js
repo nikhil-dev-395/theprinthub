@@ -1,8 +1,8 @@
 const express = require("express");
 require("dotenv").config();
 const path = require("path");
-const dbConnect = require("./config/database");
-const userRoutes = require("./routes/user");
+const dbConnect = require("../config/database");
+const userRoutes = require("../routes/user");
 const app = express();
 var cors = require("cors");
 const PORT = process.env.PORT || 4000;
@@ -39,3 +39,5 @@ app.get("/", (req, res) => {
     console.log("err occurred at running a server " + error);
   }
 })();
+
+module.exports = app;
