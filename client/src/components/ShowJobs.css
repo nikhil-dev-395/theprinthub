@@ -1,0 +1,134 @@
+/* Container for the grid */
+.jobs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual job item container */
+.job-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Flex container for image and details */
+.job-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Image styling */
+.job-image {
+  margin-top: -4rem;
+  margin-right: 10px;
+}
+.img-style {
+  margin-top: 0rem !important;
+}
+/* Job details styling */
+.job-details {
+  flex: 1;
+}
+
+.job-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+/* ShowExamCards.css */
+
+/* Container styling */
+.examDetails-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead th {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+td {
+  font-size: 14px;
+}
+
+/* Heading styling */
+h3 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+/* Empty state row */
+td[colspan="2"] {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .jobs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .examDetails-container {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.job-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+.job-item:focus {
+  outline: 2px solid #4caf50;
+  outline-offset: 4px;
+}
+.job-image img {
+  max-width: 100%;
+  height: auto;
+}

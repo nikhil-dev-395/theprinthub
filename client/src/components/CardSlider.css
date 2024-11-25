@@ -1,0 +1,8 @@
+/* CardSlider.css */
+.slick-slide > div {
+  margin: 0 10px; /* Adjust the margin to reduce or increase the gap */
+}
+
+.slick-list {
+  margin: 0 -5px; /* Adjust this to match the margin applied above */
+}
